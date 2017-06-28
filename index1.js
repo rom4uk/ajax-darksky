@@ -46,7 +46,7 @@ function geoLocation(){
 		dataType: 'jsonp'
 	}).done(function(data) {
 		info.innerHTML = '<p> Now You Are Standing In </p>';
-		infoLocation.innerHTML = data.country_name + ', ' + data.region_name + ', ' + data.city + "</p>You're IP is " + data.ip + '</p>';
+		infoLocation.innerHTML = data.country_name + ', ' + data.region_name + ', ' + data.city;
 		console.log(data)
 	});
 }
