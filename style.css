@@ -1,0 +1,24 @@
+body{
+	text-align: center;
+	background-image: url(http://paragliding4.me/images/stories/v-chernogorii/pogoda-v-chernogorii_1024.jpg);
+	background-size: cover;
+	color: #000;
+}
+.container{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+button{
+	margin: 5px 15px;
+}
+.weather p{
+	margin-bottom: 15px;
+}
+.locating{
+	padding-top: 100px;
+}
+.show-weather{
+	font-size: 20px;
+}
