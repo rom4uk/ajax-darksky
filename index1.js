@@ -58,7 +58,7 @@ function getTodayWeather(){
 	}).done(function(data) {
 		curentWeather.innerHTML = 'Сегодня: ' + data.currently.summary + ', ' + data.daily.data[0].summary;
 		maxTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMax + '&#176;';
-		minTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
+		minTemperature.innerHTML = 'Минимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
 		console.log(data);
 	})
 }
@@ -71,7 +71,7 @@ function getTomorrowWeather(){
 	}).done(function(data) {
 		curentWeather.innerHTML = 'Завтра будет: ' + data.currently.summary + ', ' + data.daily.data[0].summary;
 		maxTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMax + '&#176;';
-		minTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
+		minTemperature.innerHTML = 'Минимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
 		console.log(data);
 	})
 }
@@ -84,7 +84,7 @@ function getPastWeather(){
 	}).done(function(data) {
 		curentWeather.innerHTML = 'Вчера было: '+ data.currently.summary + ', ' + data.daily.data[0].summary;
 		maxTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMax + '&#176;';
-		minTemperature.innerHTML = 'Максимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
+		minTemperature.innerHTML = 'Минимальная температура : ' + data.daily.data[0].temperatureMin + '&#176;';
 		console.log(data);
 	})
 }
